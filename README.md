@@ -24,16 +24,17 @@ In your webpackage, the following config is expected to be found in the _.webpac
 it will be created when running the task the first time.
 
 ```js
-  "uploadConfigs": {
-    "dev": {
-      "url": "http://loalhost:8080/sandbox",
-      "proxy": ""
+  uploadConfigs: {
+    dev: {
+      url: "http://loalhost:8080/sandbox",
+      proxy: "",
+      debug: false
     },
-    "release": {
-      "url": "https://cubbles.mycompany.net/releases",
-      "proxy": ""
-    },
-    "debug": false
+    release: {
+      url: "https://cubbles.mycompany.net/releases",
+      proxy: "",
+      debug: false
+    }
   }
 ```
 
