@@ -5,13 +5,13 @@
  * Licensed under the MIT license.
  */
 
-'use strict'
-var path = require('path')
+'use strict';
+var path = require('path');
 
 module.exports = function (grunt) {
   // Project configuration.
-  var workspaceConfigPath = 'test/webpackages/.workspace'
-  var activeWebpackageConfigPath = path.join('test/webpackages', 'my-package', '.webpackage')
+  var workspaceConfigPath = 'test/webpackages/.workspace';
+  var activeWebpackageConfigPath = path.join('test/webpackages', 'my-package', '.webpackage');
   grunt.initConfig({
     // Before generating any new files, remove any previously-created files.
     clean: {
@@ -30,11 +30,11 @@ module.exports = function (grunt) {
     activeWebpackageConfigPath: activeWebpackageConfigPath,
     activeWebpackageConfig: grunt.file.readJSON(activeWebpackageConfigPath)
 
-  })
+  });
 
   // Actually load this plugin's task(s).
-  grunt.loadTasks('tasks')
+  grunt.loadTasks('tasks');
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-clean')
-}
+  grunt.loadNpmTasks('grunt-contrib-clean');
+};

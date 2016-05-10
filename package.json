@@ -16,12 +16,12 @@
   },
   "scripts": {
     "prepublish": "npm run lint",
-    "lint": "standard",
+    "lint": "eslint lib task *.js",
     "test": "grunt +webpackage-upload"
   },
   "dependencies": {
     "lodash": "^3.10",
-    "inquirer": "^0.8.5",
+    "inquirer": "^1.0.2",
     "cubx-webpackage-uploader": "^3.1.0"
   },
   "devDependencies": {
