@@ -1,12 +1,17 @@
 {
   "uploadConfigs": {
-    "dev": {
-      "url": "http://boot2docker.me/base-api-test",
-      "proxy": "",
+    "dryRun": {
+      "url": "http://cubbles-base-local/sandbox",
+      "dryRun": true,
+      "debug": false
+    },
+    "invalidProxy": {
+      "url": "http://cubbles-base-local/sandbox",
+      "proxy": "https://invalid.proxy",
       "debug": false
     },
     "release": {
-      "url": "http://boot2docker.me",
+      "url": "http://cubbles-base-local/sandbox",
       "proxy": "",
       "debug": false
     }

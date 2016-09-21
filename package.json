@@ -22,7 +22,7 @@
   "dependencies": {
     "lodash": "^3.10",
     "inquirer": "^1.0.2",
-    "cubx-webpackage-uploader": "^3.1.0"
+    "cubx-webpackage-uploader": "^3.2.0"
   },
   "devDependencies": {
     "standard": "^5.4.1",

@@ -22,6 +22,7 @@ module.exports = function (grunt) {
             url: selectedConfig.url,
             proxy: selectedConfig.proxy
           },
+          dryRun: selectedConfig.dryRun,
           debug: selectedConfig.debug
         };
         // run the upload
@@ -29,14 +30,15 @@ module.exports = function (grunt) {
         uploader.uploadSingleWebpackage(uploadConfig, function (err, success) {
           if (err) {
             if (err.response && err.response.body) {
-              grunt.fail.fatal(new Error(JSON.stringify(err.response.body)));
+              grunt.fail.fatal(new Error(JSON.stringify(err.response.body, 'null', 2)));
               done();
               return;
             }
             grunt.fail.fatal(err);
             done();
           } else {
-            grunt.log.ok(success);
+            grunt.log.ok('Success: ');
+            grunt.log.ok(JSON.stringify(success, 'null', 2));
             done();
           }
         });
@@ -58,15 +60,14 @@ module.exports = function (grunt) {
       var configFilePath = grunt.config.get('activeWebpackageConfigPath');
       var workspaceConfig = grunt.file.readJSON(configFilePath);
       workspaceConfig.uploadConfigs = {
-        dev: {
-          url: 'https://www.cubbles.world/sandbox',
+        dryRun: {
+          url: 'https://cubbles.world/sandbox',
           proxy: '',
-          debug: false
+          dryRun: true
         },
         release: {
-          url: 'https://www.cubbles.world/another-store',
-          proxy: '',
-          debug: false
+          url: 'https://cubbles.world/sandbox',
+          proxy: ''
         }
       };
       grunt.file.write(configFilePath, JSON.stringify(workspaceConfig, null, 2));

@@ -1,11 +1,3 @@
 {
-  "activeWebPackage": "my-package",
-  "webpackageUpload": {
-    "source": "test/webpackages/<%= workspaceConfig.activeWebPackage %>",
-    "target": {
-      "url": "http://boot2docker.me",
-      "proxy": ""
-    },
-    "debug": true
-  }
+  "activeWebPackage": "my-package"
 }

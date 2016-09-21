@@ -25,15 +25,14 @@ it will be created when running the task the first time.
 
 ```js
   uploadConfigs: {
-    dev: {
-      url: "http://loalhost:8080/sandbox",
-      proxy: "",
-      debug: false
+    dryRun: {
+      url: 'https://cubbles.world/sandbox',
+      proxy: '',
+      dryRun: true
     },
     release: {
-      url: "https://cubbles.mycompany.net/releases",
-      proxy: "",
-      debug: false
+      url: 'https://cubbles.world/sandbox',
+      proxy: ''
     }
   }
 ```
@@ -47,7 +46,7 @@ A key to identify the uploadConfig.
 
 #### uploadConfigs.{configName}.url
 Type: `string`
-Default value: `'https://webblebase.net/sandbox'`
+Default value: `'https://cubbles.world/sandbox'`
 
 A url pointing to a named store (here 'sandbox') within a cubbles-base.
 
@@ -57,9 +56,16 @@ Default value: `''`
 
 A proxy url, if you are behind a proxy.
 
-#### uploadConfigs.debug
+#### uploadConfigs.{configName}.dryRun
 Type: `boolean`
-Default value: `'false'`
+Default value: `false`
+
+Setting the value to `true` executes the upload procedure (including authentication and permissions check) without any data transfer.
+  The result contains a list of files that would be uploaded - as well as a list of files the will be ignored from an upload. So a _dryRun_ is perfect to check the configuration of your (optional) _.cubblesignore_ file of your webpackage.
+
+#### uploadConfigs.{configName}.debug
+Type: `boolean`
+Default value: `false`
 
 Log into the console on debug -level. 
 
