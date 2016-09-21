@@ -1,8 +1,8 @@
 # cubx-grunt-webpackage-upload
 
-Grunt integration to upload a cubbles-webpackage into a cubbles-base.
-
 [![GitHub version](https://badge.fury.io/gh/cubbles%2Fcubx-grunt-webpackage-upload.svg)](https://badge.fury.io/gh/cubbles%2Fcubx-grunt-webpackage-upload)
+
+Grunt integration of the [cubx-webpackage-uploader] (https://github.com/cubbles/cubx-webpackage-uploader).
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
