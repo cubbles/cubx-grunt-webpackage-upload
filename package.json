@@ -1,7 +1,7 @@
 {
   "name": "cubx-grunt-webpackage-upload",
   "description": "Grunt integration to upload a cubbles-webpackage into a cubbles-base.",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "author": {
     "name": "Hd Böhlau",
     "email": "hans-dieter.boehlau@incowia.com"
