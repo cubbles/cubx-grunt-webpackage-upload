@@ -1,6 +1,6 @@
 # cubx-grunt-webpackage-upload
 
-[![GitHub version](https://badge.fury.io/gh/cubbles%2Fcubx-grunt-webpackage-upload.svg)](https://badge.fury.io/gh/cubbles%2Fcubx-grunt-webpackage-upload)
+ [![NPM Version][npm-image]][npm-url] [![GitHub version](https://badge.fury.io/gh/cubbles%2Fcubx-grunt-webpackage-upload.svg)](https://badge.fury.io/gh/cubbles%2Fcubx-grunt-webpackage-upload)
 
 Grunt integration of the [cubx-webpackage-uploader] (https://github.com/cubbles/cubx-webpackage-uploader).
 
@@ -73,3 +73,6 @@ Log into the console on debug -level.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+[npm-image]: https://img.shields.io/npm/v/cubx-grunt-webpackage-upload.svg
+[npm-url]: https://npmjs.org/package/cubx-grunt-webpackage-upload
