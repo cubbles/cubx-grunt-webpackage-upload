@@ -17,7 +17,7 @@
   "scripts": {
     "preversion": "npm run lint",
     "prepublish": "npm run lint",
-    "lint": "eslint lib task *.js",
+    "lint": "eslint lib tasks test",
     "test": "grunt +webpackage-upload"
   },
   "dependencies": {
