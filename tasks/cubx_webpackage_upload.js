@@ -58,8 +58,8 @@ module.exports = function (grunt) {
       // create uploadConfig
       grunt.log.warn('Upload configuration not found. Running a fix ... ');
       var configFilePath = grunt.config.get('activeWebpackageConfigPath');
-      var workspaceConfig = grunt.file.readJSON(configFilePath);
-      workspaceConfig.uploadConfigs = {
+      var webpackageConfig = grunt.file.readJSON(configFilePath);
+      webpackageConfig.uploadConfigs = {
         dryRun: {
           url: 'https://cubbles.world/sandbox',
           proxy: '',
@@ -70,7 +70,7 @@ module.exports = function (grunt) {
           proxy: ''
         }
       };
-      grunt.file.write(configFilePath, JSON.stringify(workspaceConfig, null, 2));
+      grunt.file.write(configFilePath, JSON.stringify(webpackageConfig, null, 2));
       grunt.log.warn('Initial upload configuration now available at ' + configFilePath);
       grunt.log.warn('Please review the config and retry ...');
     }
