@@ -15,6 +15,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
+    "preversion": "npm run lint",
     "prepublish": "npm run lint",
     "lint": "eslint lib task *.js",
     "test": "grunt +webpackage-upload"
