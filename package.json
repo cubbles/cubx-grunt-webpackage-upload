@@ -18,7 +18,7 @@
     "preversion": "npm run lint",
     "prepublish": "npm run lint",
     "lint": "eslint lib tasks test",
-    "test": "grunt +webpackage-upload"
+    "test": "grunt +webpackage-upload _webpackages-bulk-upload"
   },
   "dependencies": {
     "lodash": "^3.10",

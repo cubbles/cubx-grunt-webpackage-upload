@@ -10,6 +10,7 @@ var path = require('path');
 
 module.exports = function (grunt) {
   // Project configuration.
+  var workspacePath = 'test/webpackages';
   var workspaceConfigPath = 'test/webpackages/.workspace';
   var activeWebpackageConfigPath = path.join('test/webpackages', 'my-package', '.webpackage');
   grunt.initConfig({
@@ -24,6 +25,7 @@ module.exports = function (grunt) {
     },
 
     // the option used within the devtools to load the workspace-config
+	workspacePath: workspacePath,
     workspaceConfigPath: workspaceConfigPath,
     workspaceConfig: grunt.file.readJSON(workspaceConfigPath),
     //

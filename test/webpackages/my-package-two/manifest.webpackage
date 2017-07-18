@@ -1,0 +1,41 @@
+{
+  "name": "my-package-two",
+  "groupId": "",
+  "version": "0.1.0-SNAPSHOT",
+  "modelVersion": "8.0.0",
+  "docType": "webpackage",
+  "author": {
+    "name": "John Doe",
+    "email": "mail@john.de"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "man": [],
+  "runnables": [
+    {
+      "name": "My Hello World App.",
+      "path": "/app/index.html",
+      "description": "Call this app as a simple demo."
+    }
+  ],
+  "artifacts": {
+    "apps": [
+      {
+        "artifactId": "app",
+        "description": "This is a simple pre-generated app.",
+        "endpoints": [
+          {
+            "endpointId": "main",
+            "resources": [
+              "index.html"
+            ],
+            "dependencies": []
+          }
+        ]
+      }
+    ],
+    "elementaryComponents": [],
+    "compoundComponents": [],
+    "utilities": []
+  }
+}

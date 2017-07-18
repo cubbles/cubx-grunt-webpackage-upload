@@ -1,5 +1,4 @@
 {
-  "activeWebPackage": "my-package",
   "uploadConfigs": {
     "dryRun": {
       "url": "http://cubbles-base-local/sandbox",

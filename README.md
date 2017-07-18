@@ -71,6 +71,21 @@ Default value: `false`
 
 Log into the console on debug -level. 
 
+## The "_webpackages-bulk-upload" task
+
+### Overview
+In your projects webpackages directory, a similar config as above is expected to be found in the _.workspace_ file. If its is not found, 
+it will be created when running the task the first time.
+
+Additionaly a list of webpackages to upload can be pre-specified
+
+```js
+  "uploadWebpackages": [
+      "my-package-one",
+      "my-package-two"
+    ]
+```
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 

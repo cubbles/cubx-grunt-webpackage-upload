@@ -1,4 +1,4 @@
-/*global module,require*/
+/* global module,require */
 'use strict';
 var Uploader = require('cubx-webpackage-uploader');
 var uploader = new Uploader();
